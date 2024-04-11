@@ -55,6 +55,11 @@
   color: white !important;
 }
 
+.card-header{
+  background-color: rgb(20, 65, 100) !important;
+  color: white !important;
+}
+
 /* Set default color for the arrow */
 .accordion-button::after {
   content: "";
@@ -112,3 +117,5 @@ a {
     font-size: 16px; /* Adjust font size for smaller screens */
   }
 }
+
+

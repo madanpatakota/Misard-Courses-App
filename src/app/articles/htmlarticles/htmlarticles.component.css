@@ -1,0 +1,15 @@
+/* Custom CSS for button */
+.custom-btn {
+    border-radius: 50px !important;/* Rounded corners */
+    transition: background-color 0.3s ease !important; /* Smooth transition on hover */
+  }
+  
+  .custom-btn:hover {
+    background-color: #007bff !important; /* Highlight color on hover */
+  }
+
+  
+.card-header + .card-body {
+    border-top: none !important;
+  }
+  

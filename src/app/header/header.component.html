@@ -37,6 +37,48 @@
         class="navbar-nav ms-auto text-end"
         style="margin-right: 100px !important"
       >
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Articles
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-wide dropdown-menu-left"
+            aria-labelledby="navbarDropdown"
+          >
+          <li>
+            <a class="dropdown-item" [routerLink]="'articles/html-articles'">HTML</a>
+          </li>
+
+            <li>
+              <a class="dropdown-item" [routerLink]="'articles/angular-articles'">Angular</a>
+            </li>
+
+            <li>
+              <a class="dropdown-item" [routerLink]="'articles/javascript-articles'"
+                >Javascript</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="typescript-articles"
+                >Typescript</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="Csharp-articles">C#.net</a>
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="netcore-articles"
+                >Asp.netCore</a
+              >
+            </li>
+          </ul>
+        </li>
         <li class="nav-item">
           <a class="nav-link" routerLink="angular-training">Angular</a>
         </li>
@@ -92,7 +134,7 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/netcore-index.html"
+          <a class="nav-link" routerLink="/netcore-index.html"
             ><strong>Meet your mentor</strong></a
           >
         </li>
