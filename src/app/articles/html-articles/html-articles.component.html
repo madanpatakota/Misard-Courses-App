@@ -1,9 +1,32 @@
 <style>
-  /* Custom CSS for button */
+  pre {
+      background-color: black;
+      padding: 10px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
 
-  
+    code {
+      color: white;
+    }
+
+    h3, h4, p {
+      margin-top: 20px;
+      color: white;
+    }
 </style>
-<div class="container mt-4">
+
+
+
+  <!-- html-articles.component.html -->
+
+<div *ngIf="windowID; else regularContent">
+  <!-- If windowID exists, load HtmlArticlesNewwindowComponent -->
+  <!-- <app-html-articles-newwindow ></app-html-articles-newwindow> -->
+  <app-html-articles-newwindow [windowID]="windowID"></app-html-articles-newwindow>
+</div>
+<ng-template #regularContent>
+  <div class="container mt-4">
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">HTML List Overview</h5>
@@ -14,7 +37,11 @@
         </ul>
         <span class="text-muted" style="font-style: italic;">Created by : Rakesh, Misard Student</span>
 
-        <button type="button" class="btn btn-primary custom-btn float-end" onclick="openNewWindow()">View More</button> <!-- Use float-end class to float button to the right -->
+        <button type="button" class="btn btn-primary custom-btn float-end" (click)="openNewWindow('1')">View More</button> <!-- Use float-end class to float button to the right -->
       </div>
     </div>
   </div>
+</ng-template>
+
+
+  

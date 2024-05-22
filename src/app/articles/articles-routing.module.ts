@@ -13,20 +13,24 @@ import { TypescriptArticlesComponent } from './typescript-articles/typescript-ar
 import { CsharpArticlesComponent } from './csharp-articles/csharp-articles.component';
 import { NetcoreArticlesComponent } from './netcore-articles/netcore-articles.component';
 import { HtmlArticlesComponent } from './html-articles/html-articles.component';
+import { HtmlArticlesNewwindowComponent } from './html-articles/html-articles-newwindow/html-articles-newwindow.component';
 
 const appChildRoutes: Routes = [
-
-
   { path: '', component: ArticlesComponent },
-  { path: 'angular-articles', component: AngularArticlesComponent },
+  {
+    path: 'angular-articles', component: AngularArticlesComponent
+  },
   { path: 'javascript-articles', component: JavascriptArticlesComponent },
   { path: 'typescript-articles', component: TypescriptArticlesComponent },
   { path: 'csharp-articles', component: CsharpArticlesComponent },
   { path: 'aspnetcore-articles', component: NetcoreArticlesComponent },
-  { path: 'html-articles', component: HtmlArticlesComponent }
-
-
-
+  {
+    path: 'html-articles',
+    component: HtmlArticlesComponent,
+    children: [
+      { path: ':/ID', component: HtmlArticlesNewwindowComponent }
+    ]
+  }
 ];
 
 @NgModule({
