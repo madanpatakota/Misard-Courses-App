@@ -1,32 +1,57 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, bootstrapApplication } from '@angular/platform-browser';
-
-import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
 import { AngularComponent } from './angular/angular.component';
-import { HtmlComponent } from './html/html.component';
 import { JavascriptComponent } from './javascript/javascript.component';
 import { TypescriptComponent } from './typescript/typescript.component';
-import { BootstrapComponent } from './bootstrap/bootstrap.component';
 import { CsharpComponent } from './csharp/csharp.component';
 import { AspnetcoreComponent } from './aspnetcore/aspnetcore.component';
+import { BootstrapComponent } from './bootstrap/bootstrap.component';
+import { HtmlComponent } from './html/html.component';
 import { AwsComponent } from './aws/aws.component';
 import { AzureComponent } from './azure/azure.component';
-import { ArticlesComponent } from './articles/articles.component';
-import { InterviewsComponent } from './interviews/interviews.component';
-import { CourseupdatesComponent } from './courseupdates/courseupdates.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { CarouselComponent } from './carousel/carousel.component';
-import { HomeComponent } from './home/home.component';
-import { HomealertComponent } from './homealert/homealert.component';
 import { NotfoundComponent } from './notfound/notfound.component';
-import { Routes, RouterModule, RouteReuseStrategy } from '@angular/router';
-import { TemplatesComponent } from './bootstrap/templates/templates.component';
-import { HtmlarticlesComponent } from './articles/htmlarticles/htmlarticles.component';
-import { AngularArticlesComponent } from './articles/angular-articles/angular-articles.component';
-import { JavascriptArticlesComponent } from './articles/javascript-articles/javascript-articles.component';
+import { RouterModule, Routes } from '@angular/router';
 import { TypescriptArticlesComponent } from './articles/typescript-articles/typescript-articles.component';
-import { ArticlesModule } from './articles/articles.module';
+import { JavascriptArticlesComponent } from './articles/javascript-articles/javascript-articles.component';
+import { AngularArticlesComponent } from './articles/angular-articles/angular-articles.component';
+import { TemplatesComponent } from './bootstrap/templates/templates.component';
+import { HomealertComponent } from './homealert/homealert.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
+import { CourseupdatesComponent } from './courseupdates/courseupdates.component';
+import { InterviewsComponent } from './interviews/interviews.component';
+import { ArticlesComponent } from './articles/articles.component';
+import { AppComponent } from './app.component';
+
+// import { AppComponent } from './app.component';
+// import { AngularComponent } from './angular/angular.component';
+// import { HtmlComponent } from './html/html.component';
+// import { JavascriptComponent } from './javascript/javascript.component';
+// import { TypescriptComponent } from './typescript/typescript.component';
+// import { BootstrapComponent } from './bootstrap/bootstrap.component';
+// import { CsharpComponent } from './csharp/csharp.component';
+// import { AspnetcoreComponent } from './aspnetcore/aspnetcore.component';
+// import { AwsComponent } from './aws/aws.component';
+// import { AzureComponent } from './azure/azure.component';
+// import { ArticlesComponent } from './articles/articles.component';
+// import { InterviewsComponent } from './interviews/interviews.component';
+// import { CourseupdatesComponent } from './courseupdates/courseupdates.component';
+// import { HeaderComponent } from './header/header.component';
+// import { FooterComponent } from './footer/footer.component';
+// import { CarouselComponent } from './carousel/carousel.component';
+// import { HomeComponent } from './home/home.component';
+// import { HomealertComponent } from './homealert/homealert.component';
+// import { NotfoundComponent } from './notfound/notfound.component';
+// import { Routes, RouterModule, RouteReuseStrategy } from '@angular/router';
+// import { TemplatesComponent } from './bootstrap/templates/templates.component';
+// // import { HtmlarticlesComponent } from './articles/htmlarticles/htmlarticles.component';
+// import { HtmlArticlesComponent } from './articles/html-articles/html-articles.component';
+// import { AngularArticlesComponent } from './articles/angular-articles/angular-articles.component';
+// import { JavascriptArticlesComponent } from './articles/javascript-articles/javascript-articles.component';
+// import { TypescriptArticlesComponent } from './articles/typescript-articles/typescript-articles.component';
+// import { ArticlesModule } from './articles/articles.module';
 
 
 
@@ -71,11 +96,10 @@ const appRoutes: Routes = [
     HomeComponent,
     HomealertComponent,
     TemplatesComponent,
-    HtmlarticlesComponent,
+    TemplatesComponent,
     AngularArticlesComponent,
     JavascriptArticlesComponent,
-    TypescriptArticlesComponent,
-    
+    TypescriptArticlesComponent
   ],
   imports: [
     BrowserModule,
